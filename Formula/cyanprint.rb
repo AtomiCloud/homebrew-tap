@@ -5,20 +5,20 @@
 class Cyanprint < Formula
   desc "Next-Generation Language-Agnostic Templating Platform"
   homepage "https://cyanprint.dev"
-  version "2.14.0"
+  version "2.15.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.14.0/cyanprint_Darwin_x86_64.tar.gz"
-      sha256 "bfc9b0cc9942cb594b2f71b633cacc362636b94c14242cf73070324a7e8a9e89"
+      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.15.0/cyanprint_Darwin_x86_64.tar.gz"
+      sha256 "354ba0eb852573b4b5dfaf7df936bf5e679628fd4d1cf59b665dea4567147555"
 
       def install
         bin.install "cyanprint"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.14.0/cyanprint_Darwin_arm64.tar.gz"
-      sha256 "3c8d3364ad8abb0b50902185bdfab6b25ab8b88712a92e86e3a4f89a5aaf89c5"
+      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.15.0/cyanprint_Darwin_arm64.tar.gz"
+      sha256 "322ed8eeadee44ce7fb57683696a43ae45d43a541f0771109f55cce3d7e9bf7d"
 
       def install
         bin.install "cyanprint"
@@ -28,15 +28,15 @@ class Cyanprint < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.14.0/cyanprint_Linux_x86_64.tar.gz"
-      sha256 "2e2f9ce4ccec89ea1f97e33536dcc8049f3b060f2289437ddcea2b4f3726f7e9"
+      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.15.0/cyanprint_Linux_x86_64.tar.gz"
+      sha256 "815fda5111f580cbde7f3b369f3542615870eb5db9b16c90bdf590584e86339f"
       def install
         bin.install "cyanprint"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.14.0/cyanprint_Linux_arm64.tar.gz"
-      sha256 "74d926bf9a7c73ad2ea6b6241aad4fb8089fbe9a4c0326b74e68ef654ff770ae"
+      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.15.0/cyanprint_Linux_arm64.tar.gz"
+      sha256 "55d3bf5d9d367af5b7bd92ce030f90366e74dc6812cdb782dc31cde91fafec8e"
       def install
         bin.install "cyanprint"
       end
