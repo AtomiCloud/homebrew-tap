@@ -5,20 +5,12 @@
 class Cyanprint < Formula
   desc "Next-Generation Language-Agnostic Templating Platform"
   homepage "https://cyanprint.dev"
-  version "2.20.0"
+  version "2.21.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.20.0/cyanprint_Darwin_x86_64.tar.gz"
-      sha256 "178e590f85c2d92df19e99c4a8ca78c509863a8a1e84af5d9f22b3b1cdcaff3a"
-
-      def install
-        bin.install "cyanprint"
-      end
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.20.0/cyanprint_Darwin_arm64.tar.gz"
-      sha256 "63b9d225dfee26a8d20f67605618c5fb59719278ff37d882a53546c60c9c219f"
+      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.21.1/cyanprint_Darwin_arm64.tar.gz"
+      sha256 "8c9f1545a186493901152cc00d0834b71b05f8fb22ad7dca39a4c46b1446d5ef"
 
       def install
         bin.install "cyanprint"
@@ -28,15 +20,15 @@ class Cyanprint < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.20.0/cyanprint_Linux_x86_64.tar.gz"
-      sha256 "63303c0c9b1473ee56d764848d193bc11b14d7a6e71fc91fe231378a02468391"
+      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.21.1/cyanprint_Linux_x86_64.tar.gz"
+      sha256 "705917b6866c99e66af386650e3ff4a8d99398bad02469ffb5494ecbe29eba8a"
       def install
         bin.install "cyanprint"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.20.0/cyanprint_Linux_arm64.tar.gz"
-      sha256 "8c54df0cd3f286f6e3aa4a2b313858639a61416a7a5fc2fee4c14a3870cfef81"
+      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.21.1/cyanprint_Linux_arm64.tar.gz"
+      sha256 "e68d0c935cde7367f392a147c56aaa9bfd968c2f3a7afcf69f788e82f797f240"
       def install
         bin.install "cyanprint"
       end
