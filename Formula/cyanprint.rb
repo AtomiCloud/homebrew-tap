@@ -5,12 +5,12 @@
 class Cyanprint < Formula
   desc "Next-Generation Language-Agnostic Templating Platform"
   homepage "https://cyanprint.dev"
-  version "2.22.0"
+  version "2.23.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.22.0/cyanprint_Darwin_arm64.tar.gz"
-      sha256 "48d11bde17df55fc645f2d5f2314860a55fe952a3a32bdbfc02b4712580344ea"
+      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.23.0/cyanprint_Darwin_arm64.tar.gz"
+      sha256 "e60f7f0f6225e99e80f63afa71f8247267b2014d929f0f85c76bb35506da7f06"
 
       def install
         bin.install "cyanprint"
@@ -20,15 +20,15 @@ class Cyanprint < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.22.0/cyanprint_Linux_x86_64.tar.gz"
-      sha256 "1cc0d228400f9c47941fedda53724cfb6dd0ef493b30882c3d001eb89a4a241d"
+      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.23.0/cyanprint_Linux_x86_64.tar.gz"
+      sha256 "1a8f762074b4512dff38c22cc8b1928baecd6de8d620190e86f038c188a29bad"
       def install
         bin.install "cyanprint"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.22.0/cyanprint_Linux_arm64.tar.gz"
-      sha256 "74c3e6a81c656d65ebcc43307220197b749ef8f91a201e7b168518feaa0f36b8"
+      url "https://github.com/AtomiCloud/sulfone.iridium/releases/download/v2.23.0/cyanprint_Linux_arm64.tar.gz"
+      sha256 "b9c81536b2255dbdfe35c085b0eecd2c228ac06543f65132a86d5d6ba3941efe"
       def install
         bin.install "cyanprint"
       end
